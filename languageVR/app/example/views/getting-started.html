@@ -1,0 +1,63 @@
+<div class="padding">
+
+  <super-navbar>
+    <super-navbar-title>
+      Language VR
+    </super-navbar-title>
+  </super-navbar>
+
+  <p class="name"> Name and logo go here</p>
+
+  <div class="level">
+    <div class="level-display">
+      <br>
+      1
+      </div>
+    <div class="level-text">
+      <br>Level 1
+      <br>50% complete
+    </div>
+  </div>
+
+  <super-navigate view-id="vocab-list">
+    <button class="button button-block button-balanced icon-left super-wand">Vocab List</button>
+  </super-navigate>
+
+  <super-navigate view-id="notecards-list">
+    <button class="button button-block button-balanced icon-left super-university">Notecards</button>
+  </super-navigate>
+
+<div ng-controller="FormController">
+  <button class="button button-block button-balanced icon-left super-wand" ng-click="FormController">Vocab List</button>
+</div>
+
+</div>
+
+<style>
+   .name {
+     min-height: 200px;
+     background: gray;
+   }
+
+   .level {
+     width: 100%;
+   }
+
+   .level-display {
+     width: 45%;
+     float: left;
+     background: gray;
+     height: 100px;
+     border-radius: 60px;
+     text-align: center;
+     font-size: 25px;
+     color: #fff;
+     font-weight: bold;
+     margin-bottom: 15px;
+   }
+
+   .level-text {
+     width: 45%;
+     float: right;
+   }
+</style>
